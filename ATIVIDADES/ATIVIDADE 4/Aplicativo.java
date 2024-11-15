@@ -19,5 +19,8 @@ public class Aplicativo {
 
         p1.estadoAtual();
         p2.estadoAtual();
+        p2.pagarMensal();
+        p1.pagarMensal();
+        p2.estadoAtual();
     }
 }

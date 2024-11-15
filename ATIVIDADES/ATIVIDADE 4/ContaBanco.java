@@ -101,14 +101,15 @@ public class ContaBanco {
             v=12;
         }else if(getTipo()=="CP"){
             v=20;
-        }else{
-            if(isStatus()){
-                if(getSaldo()>v){
-                    setSaldo(getSaldo()-v);
-                }
-            }
+        }
+        if(isStatus()){
+            setSaldo(getSaldo()-v);
+            System.out.println("Mensalidade paga");
+        }else {
+            System.out.println("Impossivel pagar uma conta fechada");
         }
     }
+    
 
     public void estadoAtual(){
         System.out.println("--------------------------");
